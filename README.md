@@ -9,11 +9,13 @@ Please make sure you have installed:
 - **NodeJS** - Along with it npm (download [here](https://nodejs.org/en/)).
 
 ## Running Docker-Compose
-Either run app separately using command ```npm start``` and then interact with the application or use docker-compose to run the app. All you need to do is to navigate to the root of the application and run ```docker-compose up -d --build``` and it will spin up service.
+Either run app separately using command ```npm start``` and then interact with the application or use docker-compose.
 
-After a few minutes if you ```docker ps``` you should see running containers.
+All you need to do is to navigate to the root of the application and run ```docker-compose up -d --build``` and it will spin up the service.
 
-Now you have web app running that you can access with the server's url ```localhost:3000```
+After a few minutes if you ```docker ps``` you should see running container.
+
+Now you have web app running that you can access with the following url ```localhost:3000```
 
 ## Supported Browsers
 Tested on Chrome only.
