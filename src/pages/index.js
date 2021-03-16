@@ -7,7 +7,6 @@ import Header from './header';
 import Body from './body';
 import Nav from './nav';
 
-
 export default function LandingPage() {
 	const classes = useStyles();
 	const [open, setOpen] = React.useState(false);
@@ -24,8 +23,8 @@ export default function LandingPage() {
 		<div className={classes.root}>
 			<CssBaseline />
 			<CategoryContext>
+				<Header open={open} handleDrawerOpen={handleDrawerOpen}/>
 				<GlobalContext>
-					<Header open={open} handleDrawerOpen={handleDrawerOpen}/>
 					<Nav open={open} handleDrawerClose={handleDrawerClose} />
 					<Body open={open}/>
 				</GlobalContext>

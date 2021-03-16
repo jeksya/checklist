@@ -48,7 +48,7 @@ export default function ToDoModal({handleClose, open, onSubmit, editData, onEdit
 	const [modalStyle] = React.useState(getModalStyle);
 	const [text, setText] = React.useState({
 		priority: 'L',
-		dueDate: '',
+		dueDate: new Date(),
 		text: '',
 		description: '',
 		id: (Math.random() * 2000),
@@ -81,7 +81,7 @@ export default function ToDoModal({handleClose, open, onSubmit, editData, onEdit
 		if(!editData){
 			setText({
 				priority: 'L',
-				dueDate: '',
+				dueDate: new Date(),
 				text: '',
 				description: '',
 				id: (Math.random() * 2000),
