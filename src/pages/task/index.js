@@ -95,6 +95,7 @@ const Task = ({task, handleDelete, onEditClick, column, moveTask}) => {
 						</PopupState>
 					}
 					title={task.text}
+					className="yoyoyoyo"
 					subheader={moment(task.dueDate).format('YYYY-MM-DD HH:mm:ss')}
 				/>
 				<CardContent>
